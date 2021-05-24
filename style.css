@@ -1,1 +1,99 @@
 /*------------Tady piš svoje stylování --------------*/
+
+.social-media {
+  display: flex;
+  width: 40%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.photos {
+  height: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.date__busy {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 360px) {
+  .social-media {
+    width: 40%;
+  }
+}
+
+@media (min-width: 576px) {
+  .social-media {
+    width: 30%;
+  }
+
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card--md {
+    width: 49%;
+  }
+
+  .card--lg {
+    width: 100%;
+  }
+
+  .card--sm {
+    width: 49%;
+  }
+  .card--wide {
+    width: 100%;
+  }
+
+  .newsletter__article {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .social-media {
+    width: 20%;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .newsletter__article {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social-media {
+    width: 15%;
+  }
+  .dashboard {
+    display: flex;
+  }
+
+  .card--md {
+    order: 2;
+    width: 32%;
+  }
+  .card--sm {
+    order: 4;
+    width: 32%;
+  }
+  .card--lg {
+    order: 3;
+  }
+  .card--wide {
+    order: 1;
+    width: 32%;
+  }
+
+  .newsletter__article {
+    width: 32%;
+  }
+}
